@@ -1,4 +1,8 @@
 module.exports = {
+  siteMetadata: {
+    title: "audiocOre",
+    siteUrl: "https:/www.placeholder.com"
+  },
   plugins: [
     {
       resolve: "gatsby-source-contentful",
