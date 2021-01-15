@@ -15,6 +15,27 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-transformer-sharp",
     {
+      resolve: `gatsby-transformer-yaml`,
+      options: {
+        // Conditionally set the typeName so that we both use a lowercased and capitalized type name
+        typeName: ({ node }) => {
+          const name = node.sourceInstanceName
+          if (name === `locations`) {
+            return `Location`
+          }
+          return name
+        },
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+          path: "./locations",
+          name: "locations",
+      },
+      __key: "locations",
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",

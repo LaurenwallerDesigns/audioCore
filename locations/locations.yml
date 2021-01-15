@@ -1,0 +1,6 @@
+- name: "LA"
+  description: "Yep, we started in LA of all places."
+- name: "Oakland"
+  description: "We're also in Oakland."
+- name: "San Fransisco"
+  description: "We're also in San Fransisco."
