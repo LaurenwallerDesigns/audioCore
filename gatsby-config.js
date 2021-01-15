@@ -1,7 +1,4 @@
 module.exports = {
-  siteMetadata: {
-    title: "audiocOre",
-  },
   plugins: [
     {
       resolve: "gatsby-source-contentful",
